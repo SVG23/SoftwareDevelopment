@@ -1,0 +1,126 @@
+*{
+    
+    font-family: 'Frank Ruhl Libre', sans-serif;
+    padding: 0px;  
+}
+
+
+#head{
+    
+    height: 50px;
+    background-color:#EDEAE3 ;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.navbar-nav > li > a {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:active,
+.navbar-nav > li > a:visited,
+.navbar-nav > li > a:focus{
+    
+    background-color: rgba(0,0,0,0);
+}
+
+#ImgSlider{
+    background-image: url(../Images/background_image_5.jpg);
+    height:590px;
+    background-color:#FFFFFF;
+    width: 100%;
+}
+
+#profile{
+    
+height: 90%;
+background-color:#86C543; 
+padding-top: 50px;
+}
+
+#skill{
+    
+   height: 500px;
+    background-color:#E6E6E6; 
+    padding-top: 50px;
+}
+
+#education{
+    
+   height: 500px;
+    background-color:#FFFFFF; 
+    padding-top: 50px;
+}
+
+#experience{
+    
+   height: 500px;
+    background-color:#E6E6E6; 
+    padding-top: 50px;
+}
+
+#portfolio{
+    
+    height: auto;
+    min-height: 500px;
+    background-color:#FFFFFF; 
+    padding-top: 50px;
+   
+}
+
+#contact{
+    
+   height: 800px;
+    background-color:deepskyblue; 
+    color: #FFF;
+    padding-top: 50px;
+   
+}
+
+.hrow{
+    
+    border: 0px;
+   height: 3px;
+    background-color:#34302D;
+    width: 5%;
+    
+}
+
+.profilePic{
+    
+    padding: 30px;
+
+}
+
+.details{
+    
+    color: white;
+    padding: 30px;
+}
+.titleColor{
+    
+    color: #E6E6E6;
+    font-size: 16px;
+}
+
+.align{
+    
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.name,.email,.message{
+    
+    border-radius: 0px;
+}
+
+.contact{
+    
+    list-style: none;
+}
