@@ -1,0 +1,42 @@
+
+<div class="container" id="divlogin">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 ">
+            <div class="col-md-offset-6 col-md-6"><img src="images/logo.png" alt="logo" id="logo"></div>
+        </div>
+        <div class="col-md-6 col-sm-6 " id="divform">
+            <form ng-submit="login_details({u_name:uname,u_pwd:upwd})" name="loginform" class="form-horizontal">
+              <div class="form-group" ng-class="{'has-error': loginform.uname.$error.required && loginform.uname.$dirty}">
+                 <div class="col-md-8 col-sm-8">
+                    <label>Username<b style="color:red;">*</b></label>
+                    <input type="text" name="uname" ng-model="uname" id="uname" ng-minlength="4" ng-maxlength="30" placeholder="Enter your user name" class="form-control" required>
+                     <span ng-show="loginform.uname.$dirty && loginform.uname.$error.required" class="help-block" style="color:red;">Username is required</span>
+                 </div>
+              </div>
+
+                <div class="form-group" ng-class="{'has-error': loginform.upwd.$error.required && loginform.upwd.$dirty}">
+                    <div class="col-md-8 col-sm-8">
+                        <label>password<b style="color:red;">*</b></label>
+                        <input type="password" name="upwd" ng-model="upwd" id="upwd" ng-minlength="6" ng-maxlength="30" placeholder="Enter your password" class="form-control" required>
+                        <span ng-show="loginform.upwd.$dirty && loginform.upwd.$error.required" class="help-block" style="color:red;">Password is required</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-4 col-sm-8">
+                        <input type="submit" value="Login" class="form-control btn btn-default" id="Login" ng-disabled="loginform.uname.$error.required || loginform.upwd.$error.required">
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        <button class="form-control btn btn-default" id="forgot"><a ui-sref=".forgot">Forgot Password</a></button>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-8 col-sm-8">
+                      <button class="form-control btn btn-default" id="register"><a ui-sref=".register">Not a user? Register</a></button>
+                  </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div ui-view class="container"></div>

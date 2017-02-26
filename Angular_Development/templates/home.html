@@ -1,0 +1,71 @@
+<div style="padding-top: 20px"></div>
+
+
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="home" id="logo"></a>
+        </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a ui-sref="home">Home</a></li>
+                <li><a ui-sref=".about">About</a></li>
+                <li><a ui-sref=".contact">Contact</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li style="color:#ffffff"><a>User</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"  id="user"></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">profile</a></li>
+                        <li><a href="">Settings</a></li>
+                        <li class="divider"></li>
+                        <li ng-click="logout()"><a><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+</div>
+
+
+<!--- side Navavigation--->
+<div class="container">
+<div class="row">
+<ul class="nav nav-pills nav-stacked col-sm-1">
+    <li class="active"><a ui-sref="home">Home</a></li>
+    <li><a ui-sref=".about">About</a></li>
+    <li><a ui-sref=".about">Activity</a></li>
+    <li><a ui-sref=".about">Follow</a></li>
+    <li><a ui-sref=".contact">Contact</a></li>
+</ul>
+
+<div ui-view class="col-sm-11" >
+    <h1 style="color:orangered">{{var_one}}</h1>
+    <p>
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+    </p>
+    <p>
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+        lorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amenlorum ipsum dollar suit amen
+    </p>
+
+</div>
+</div>
+</div>
+

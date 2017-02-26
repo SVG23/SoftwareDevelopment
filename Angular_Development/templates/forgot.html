@@ -1,0 +1,19 @@
+
+<div class="col-md-offset-2 col-md-6 col-lg-6">
+    <label class="label-control text-primary" style="font-size:30px;font-family:verdana">Forgot Password?</label>
+    <form ng-submit="forgot()" name="forgot" class="form-horizontal">
+
+        <div class="form-group" ng-class="{'has-error': forgot.username.$dirty && forgot.username.$error.required }">
+            <div class="col-md-10 col-lg-10">
+                <label for="username" class="control-label">Username or Email<sup style="color:red"><b>*</b></sup></label>
+                <input type="text" class="form-control" name="username" placeholder="Enter Username or Email" ng-model="username" id="username" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-5"><button type="submit" class="form-control" value="forgot"><b>Submit</b></button></div>
+            <div class="col-md-5"><button type="reset" class="form-control" value="cancel"><b>Cancel</b></button></div>
+        </div>
+
+    </form>
+</div>

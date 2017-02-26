@@ -1,0 +1,88 @@
+
+<!--Registration Form-->
+<div class="col-md-offset-2 col-md-6 col-lg-6">
+    <label class="label-control text-primary" style="font-size:30px;font-family:verdana">Not a User SignUp</label>
+    <form ng-submit="registeruser()" name="register" class="form-horizontal">
+        <div class="form-group">
+            <div class="col-md-5 col-lg-5">
+                <label>First Name<sup style="color:red"><b>*</b></sup></label>
+                <input type="text" class="form-control" name="fname" placeholder="First Name" ng-model="fname" id="fname" required>
+                <span ng-show="register.fname.$dirty && register.fname.$error.required" class="help-block" style="color:red;">First name is required</span>
+                <div ng-messages="register.fname.$error" style="color:red;">
+                    <div ng-message="minlength">Minimum 2 characters</div>
+                    <div ng-message="maxlength">Maximum 12 characters</div>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-lg-5">
+                <label>Last Name<sup style="color:red"><b>*</b></sup></label>
+                <input type="text" class="form-control" name="lname" placeholder="Last Name" ng-model="lname" id="lname" required>
+                <span ng-show="register.lname.$dirty && register.lname.$error.required" class="help-block" style="color:red;">Last name is required</span>
+                <div ng-messages="register.fname.$error" style="color:red;">
+                    <div ng-message="minlength">Minimum 2 characters</div>
+                    <div ng-message="maxlength">Maximum 12 characters</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10 col-lg-10">
+                <label for="email" class="control-label">Choose your Email Address<sup style="color:red"><b>*</b></sup></label>
+                <input type="email" class="form-control" name="email" placeholder="Enter your Email" ng-model="email" ng-minlength="5" id="email" required>
+                <span ng-show="register.email.$dirty && register.email.$error.required" class="help-block" style="color:red;">Email is required</span>
+                <div ng-messages="register.email.$error" style="color:red;">
+                    <div ng-message="minlength">Minimum 4 characters</div>
+                    <div ng-message="maxlength">Maximum 16 characters</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10 col-lg-10">
+                <label for="pwd" class="control-label">Create a Password<sup style="color:red"><b>*</b></sup></label>
+                <input type="password" class="form-control" name="pwd" placeholder="Enter password" ng-model="pwd" id="pwd" required>
+                <span ng-show="register.password.$dirty && register.password.$error.required" class="help-block" style="color:red;">Password is required</span>
+                <div ng-messages="register.password.$error" style="color:red;">
+                    <div ng-message="minlength">Minimum 4 characters</div>
+                    <div ng-message="maxlength">Maximum 20 characters</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10 col-lg-10">
+                <label for="date" class="control-label">Date of Birth<sup style="color:red"><b>*</b></sup></label>
+                <input type="date" class="form-control" name="date" ng-model="date" id="date" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10 col-lg-10">
+                <label for="gender" class="control-label">Gender<sup style="color:red"><b>*</b></sup></label>
+                <select class="form-control" name="gender" ng-model="gender" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10 col-lg-10">
+                <label for="phone" class="control-label">Enter Mobile Number<sup style="color:red"><b>*</b></sup></label>
+                <input type="tel" class="form-control" ng-pattern="" name="phone" placeholder="Enter Your Mobile Number" ng-model="phone" id="phone" required>
+                <span ng-show="register.phone.$dirty && register.phone.$error.required" class="help-block" style="color:red;">Mobile number is required</span>
+                <div ng-messages="register.phone.$error" style="color:red;">
+                    <div ng-message="minlength">Minimum 10 Numbers</div>
+                    <div ng-message="maxlength">Maximum 10 Numbers</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-5"><button type="submit" class="form-control" ng-disabled="form.$invalid" ng-click=""><b>Register</b></button></div>
+            <div class="col-md-5"><button type="reset" class="form-control" value="cancel" ng-click="reg_reset()"><b>Cancel</b></button></div>
+        </div>
+
+    </form>
+</div>
