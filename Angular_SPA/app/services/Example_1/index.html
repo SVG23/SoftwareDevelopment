@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+    <div ng-controller="ctrl_one">
+
+        <h1 style="color: #c3325f; border: 2px solid lawngreen; width: 500px; height: 50px">{{var_one}}</h1>
+
+    </div>
+
+    <div ng-controller="ctrl_two">
+
+    <h1 style="color: mediumspringgreen; border: 2px solid deepskyblue; height: 50px; width: 500px ">{{var_two}}</h1>
+
+    </div>
+
+    <!-- framework -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <!-- app module-->
+    <script src="app.js"></script>
+    <!-- Config file-->
+    <script src="config.js"></script>
+    <!-- Custom Service-->
+    <script src="Cservices/my_service.js"></script>
+    <!-- Controllers -->
+    <script src="controllers/ctrl_one.js"></script>
+    <script src="controllers/ctrl_two.js"></script>
+
+
+
+</html>

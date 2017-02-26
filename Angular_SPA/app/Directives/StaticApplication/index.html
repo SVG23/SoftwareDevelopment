@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="" ng-init="firstName='Sri';lastName='Garapati'">
+
+    <input type="number" ng-model="model_one"> <br><br>
+
+    <input type="number" ng-model="model_two"> <br><br>
+
+    <!-- Using Expression-->
+
+    <h1 style="color: green">{{model_one+model_two}}</h1>
+
+    <!-- Using ng-bind directive-->
+
+    <p style="color: red"> <span ng-bind="model_one+model_two"></span> </p>
+
+    <!-- Accessing AngularJS String using expression -->
+
+    <h1 style="color: green">{{firstName+"...."+lastName}}</h1>
+
+    <!-- Accessing AngularJS String using ng-bing directive -->
+
+    <p style="color: blue"> <span ng-bind="firstName+' '+lastName"></span> </p>
+
+    <!--  AngularJS Object -->
+
+    <div ng-init="person={age:24,id:1347514}">
+
+        <!-- Accessing AngularJS Object using expression -->
+
+        <p>Printing AngularJS Object using Expression:{{person.id}}</p>
+
+        <!-- Accessing AngularJS Object using expression -->
+
+        <p>Printing AngularJS Object using directive:<h1 ng-bind="person.age"></h1> </p>
+
+        <!-- AngularJS Array -->
+
+        <div ng-init="marks=[0,2,4,6,8]"></div>
+
+        <!-- Accessing AngularJS Array elements using expression -->
+
+        <h1>{{marks[2]}}</h1>
+
+        <!-- Accessing AngularJS Array elements using ng-bind directive -->
+
+        <h1> <p ng-bind="marks[3]"></p> </h1>
+
+    </div>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+
+</html>

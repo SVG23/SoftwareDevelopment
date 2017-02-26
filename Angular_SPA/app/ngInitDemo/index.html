@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app ng-init="intVal=10; strnVal='sri';boolVal=true;arrayValue=[10,20,30,40,50];jsonArray=[{id:1,name:'sri'},{id:2,name:'ravi'},{id:3,name:'Ashwini'}]">
+
+    <label>Integer Value: </label>{{intVal}}
+    <br><br>
+    <label>String Value: </label>{{strnVal}}
+    <br><br>
+    <label>Boolean Value: </label>{{boolVal}}
+    <br><br>
+    Array Value:
+    <div ng-repeat="x in arrayValue">
+        {{x}}
+    </div>
+
+    <br><br><br>
+
+    Json Array Value:
+    <table class="table table-responsive">
+
+        <tr>
+
+        <th>ID</th>
+        <th>Name</th>
+
+        </tr>
+
+
+        <tr ng-repeat="x in jsonArray">
+                <td>{{x.id}}</td>
+                 <td>{{x.name}}</td>
+
+        </tr>
+
+
+    </table>
+
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/angular/angular.min.js"></script>
+
+</html>

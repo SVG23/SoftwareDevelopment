@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" ng-app ng-init="arrayValue=['Hello_1','Hello_2','Hello_3','Hello_4','Hello_5']">
+
+
+
+        <div ng-repeat="x in arrayValue">
+        <h1 ng-if="x!='Hello_1'&& x!='Hello_5'">
+        {{x}}
+        </h1>
+        </div>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+
+</html>
