@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <script>
+        
+        //var form = document.getElementById("sample");
+           // form.onsubmit=return logic;
+            
+            function logic(){
+                
+                //alert("entering into function");
+                
+                var name = f1.sri.value;
+                var city = f1.city.selectedIndex;//here in the var city, the index of the selected city is stored
+                
+                
+                alert(name);
+                
+                if(name.length==0 || name==null){
+                    
+                        alert("Enter correct name");
+               
+                    }
+                
+                else if(city==0){
+                
+                    alert("Select any city");
+             
+            }
+                
+            }
+            
+            
+        
+        </script>
+        
+    
+    </head>
+
+    <body>
+    
+        <form name="f1" id="sample">
+        
+            Name:&nbsp;<input type="text" name="sri"><br><br>
+            password:&nbsp; <input type="password" name="pswd"><br><br>
+            Confirm Password:&nbsp; <input type="password" name="cpswd"><br><br>
+            
+            City:&nbsp;<select name="city">
+            
+            <option>--select--</option>
+            <option value="Boston">MA</option>
+            <option value="Hyderabad">HYD</option>
+            <option value="Rajahmundry">RJY</option>
+            <option value="Vizag">VZ</option>
+            <option value="Kakinada">KKD</option>
+            
+            </select><br><br>
+            
+            Address:&nbsp;<textarea> </textarea><br><br>
+            Gender:&nbsp;<input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="Female">Female
+            
+            <br><br>
+            
+            Languages:&nbsp;<input type="checkbox" value="telugu">Telugu
+                            <input type="checkbox" value="hindi">Hindi
+                            <input type="checkbox" value="tamil">Tamil
+            
+            <br><br>
+            
+            <input type="button" value="Submit" onclick="logic()">
+            <input type="Reset">
+        
+        </form>
+    
+    
+    </body>
+
+</html>
